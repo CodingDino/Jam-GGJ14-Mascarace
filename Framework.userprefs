@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Graphics\DropAnimationTrigger.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Input\InputPlatformMovement2D.cs" Line="76" Column="69" />
+      <File FileName="Assets\Scripts\Graphics\MatchSpriteToFacing.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Graphics\FadeSprite.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Graphics\WalkAnimationTrigger.cs" Line="32" Column="33" />
+      <File FileName="Assets\Scripts\Physics\Entity.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Physics\ColliderList.cs" Line="54" Column="3" />
+      <File FileName="Assets\Scripts\Graphics\DropAnimationTrigger.cs" Line="67" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
