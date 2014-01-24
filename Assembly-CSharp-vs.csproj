@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8AB9500B-1473-3BF7-C068-E2B9DBAB7317}</ProjectGuid>
+	<ProjectGuid>{E819C96E-DFFD-4436-AAD1-E95FFCB1B796}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AnimationSpeedController.cs" />
+     <Compile Include="Assets\BackgroundScroller.cs" />
      <Compile Include="Assets\LitJson\IJsonWrapper.cs" />
      <Compile Include="Assets\LitJson\JsonData.cs" />
      <Compile Include="Assets\LitJson\JsonException.cs" />
@@ -55,6 +57,8 @@
      <Compile Include="Assets\LitJson\Lexer.cs" />
      <Compile Include="Assets\LitJson\ParserToken.cs" />
      <Compile Include="Assets\Ouya\SDK\Scripts\OuyaGameObject.cs" />
+     <Compile Include="Assets\PlayerManager.cs" />
+     <Compile Include="Assets\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\Audio\FadeAudio.cs" />
      <Compile Include="Assets\Scripts\GUI\Button.cs" />
      <Compile Include="Assets\Scripts\GUI\ButtonScreenChange.cs" />
@@ -75,7 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{0169A365-33B2-9328-B54E-E5B74925226B}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{68FFE9DB-3683-1841-2B05-C0F0CD58B874}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
