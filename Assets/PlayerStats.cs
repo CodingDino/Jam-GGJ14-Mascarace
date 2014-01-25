@@ -1,6 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum MaskType
+{
+	Ego,
+	Happy,
+	Sad,
+	Shy
+}
 public class PlayerStats : MonoBehaviour {
 	
 	private float m_speed;
@@ -14,18 +21,17 @@ public class PlayerStats : MonoBehaviour {
 		set{ m_speed = value; }
 	}
 
-	private enum MaskType
-	{
-		Ego,
-		Happy,
-		Sad,
-		Shy
-	}
-
 	[SerializeField]
 	private MaskType m_startingMask;
 
 	private MaskType m_currentMask;
+
+	public MaskType currentMask
+	{
+		get {return m_currentMask;}
+		set {currentMask = value;}
+	}
+
 
 	// Use this for initialization
 	void Start () {

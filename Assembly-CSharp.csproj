@@ -46,8 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AnimationSpeedController.cs" />
-     <Compile Include="Assets\BackgroundScroller.cs" />
      <Compile Include="Assets\LitJson\IJsonWrapper.cs" />
      <Compile Include="Assets\LitJson\JsonData.cs" />
      <Compile Include="Assets\LitJson\JsonException.cs" />
@@ -59,14 +57,17 @@
      <Compile Include="Assets\Ouya\SDK\Scripts\OuyaGameObject.cs" />
      <Compile Include="Assets\PlayerManager.cs" />
      <Compile Include="Assets\PlayerStats.cs" />
+     <Compile Include="Assets\QuadScroller.cs" />
      <Compile Include="Assets\Scripts\Audio\FadeAudio.cs" />
      <Compile Include="Assets\Scripts\GUI\Button.cs" />
      <Compile Include="Assets\Scripts\GUI\ButtonScreenChange.cs" />
+     <Compile Include="Assets\Scripts\Graphics\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\Graphics\DropAnimationTrigger.cs" />
      <Compile Include="Assets\Scripts\Graphics\FadeSprite.cs" />
      <Compile Include="Assets\Scripts\Graphics\LayerSelecter.cs" />
      <Compile Include="Assets\Scripts\Graphics\MatchSpriteToFacing.cs" />
      <Compile Include="Assets\Scripts\Graphics\WalkAnimationTrigger.cs" />
+     <Compile Include="Assets\Scripts\Input\AnimationSpeedController.cs" />
      <Compile Include="Assets\Scripts\Input\DraggableObject.cs" />
      <Compile Include="Assets\Scripts\Input\InputAxisMovement2D.cs" />
      <Compile Include="Assets\Scripts\Input\InputPlatformMovement2D.cs" />
