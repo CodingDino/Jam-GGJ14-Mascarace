@@ -36,6 +36,10 @@ public class Entity : MonoBehaviour {
 	private bool m_rotateToMatchFacing;
 	[SerializeField]
 	private bool m_useRigidBodyVelocity;
+	[SerializeField]
+	private bool m_useCustomGravity;
+	[SerializeField]
+	private float m_customGravity;
 
 
     // ********************************************************************
@@ -137,6 +141,7 @@ public class Entity : MonoBehaviour {
 		
 		// Record position for next frame
 		m_positionLastFrame = transform.position;
+
 	}
 
 
@@ -154,6 +159,18 @@ public class Entity : MonoBehaviour {
 		m_movedLastFrame = false;
 	}
 
+	void FixedUpdate()
+	{
+		// Custom gravity
+		if (m_useCustomGravity && rigidbody2D != null)
+		{
+			Vector2 velocity = rigidbody2D.velocity;
+			velocity.y -= m_customGravity * Time.deltaTime;
+			
+			// Update the rigidbody's velocity
+			rigidbody2D.velocity = velocity;
+		}
+	}
 
 	// ********************************************************************
 	// Function:	Move()

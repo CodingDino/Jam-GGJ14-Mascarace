@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E819C96E-DFFD-4436-AAD1-E95FFCB1B796}</ProjectGuid>
+	<ProjectGuid>{79FA2FB0-D735-4C77-D485-BB26F9E8FA1F}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_3;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,13 +39,14 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity4.5/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity4.5/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CreditsController.cs" />
      <Compile Include="Assets\LitJson\IJsonWrapper.cs" />
      <Compile Include="Assets\LitJson\JsonData.cs" />
      <Compile Include="Assets\LitJson\JsonException.cs" />
@@ -54,16 +55,27 @@
      <Compile Include="Assets\LitJson\JsonWriter.cs" />
      <Compile Include="Assets\LitJson\Lexer.cs" />
      <Compile Include="Assets\LitJson\ParserToken.cs" />
+     <Compile Include="Assets\MainMenuController.cs" />
+     <Compile Include="Assets\MenuController.cs" />
+     <Compile Include="Assets\MenuController4Directional.cs" />
+     <Compile Include="Assets\MenuInputController.cs" />
      <Compile Include="Assets\Ouya\SDK\Scripts\OuyaGameObject.cs" />
-     <Compile Include="Assets\PlayerManager.cs" />
-     <Compile Include="Assets\PlayerStats.cs" />
-     <Compile Include="Assets\QuadScroller.cs" />
+     <Compile Include="Assets\SceneLoader.cs" />
+     <Compile Include="Assets\Scripts\AnimationController.cs" />
      <Compile Include="Assets\Scripts\Audio\FadeAudio.cs" />
+     <Compile Include="Assets\Scripts\BackgroundPanel.cs" />
+     <Compile Include="Assets\Scripts\BackgroundSwitcher.cs" />
+     <Compile Include="Assets\Scripts\ButtonController4Direction.cs" />
+     <Compile Include="Assets\Scripts\ButtonHoverController.cs" />
+     <Compile Include="Assets\Scripts\ComboReadoutUpdater.cs" />
+     <Compile Include="Assets\Scripts\DistanceReadout.cs" />
+     <Compile Include="Assets\Scripts\DropShadowText.cs" />
      <Compile Include="Assets\Scripts\GUI\Button.cs" />
      <Compile Include="Assets\Scripts\GUI\ButtonScreenChange.cs" />
      <Compile Include="Assets\Scripts\Graphics\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\Graphics\DropAnimationTrigger.cs" />
      <Compile Include="Assets\Scripts\Graphics\FadeSprite.cs" />
+     <Compile Include="Assets\Scripts\Graphics\FadeText.cs" />
      <Compile Include="Assets\Scripts\Graphics\LayerSelecter.cs" />
      <Compile Include="Assets\Scripts\Graphics\MatchSpriteToFacing.cs" />
      <Compile Include="Assets\Scripts\Graphics\WalkAnimationTrigger.cs" />
@@ -71,8 +83,29 @@
      <Compile Include="Assets\Scripts\Input\DraggableObject.cs" />
      <Compile Include="Assets\Scripts\Input\InputAxisMovement2D.cs" />
      <Compile Include="Assets\Scripts\Input\InputPlatformMovement2D.cs" />
+     <Compile Include="Assets\Scripts\Input\InputPlayer.cs" />
+     <Compile Include="Assets\Scripts\JumpObstacle.cs" />
+     <Compile Include="Assets\Scripts\JumpingCollision.cs" />
+     <Compile Include="Assets\Scripts\LaneManager.cs" />
+     <Compile Include="Assets\Scripts\LevelDescription.cs" />
+     <Compile Include="Assets\Scripts\ListenForPlayerJoin.cs" />
+     <Compile Include="Assets\Scripts\MaskSelecter.cs" />
+     <Compile Include="Assets\Scripts\MoveToNextScreen.cs" />
+     <Compile Include="Assets\Scripts\MultiplayerManager.cs" />
+     <Compile Include="Assets\Scripts\ObstacleAnimationController.cs" />
+     <Compile Include="Assets\Scripts\ObstacleSpawner.cs" />
+     <Compile Include="Assets\Scripts\ObstacleStats.cs" />
      <Compile Include="Assets\Scripts\Physics\ColliderList.cs" />
      <Compile Include="Assets\Scripts\Physics\Entity.cs" />
+     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\QuadScroller.cs" />
+     <Compile Include="Assets\Scripts\RankChecker.cs" />
+     <Compile Include="Assets\Scripts\ResultsScreen\Results.cs" />
+     <Compile Include="Assets\Scripts\StripePositioner.cs" />
+     <Compile Include="Assets\Scripts\TurnOnComboAndOffset.cs" />
+     <Compile Include="Assets\Scripts\Tutorial.cs" />
+     <Compile Include="Assets\SpriteController.cs" />
      <None Include="Assets\LitJson\license.txt" />
      <None Include="Assets\Plugins\Android\res\values\strings.xml" />
      <None Include="Assets\Plugins\Android\res\layout\main.xml" />
@@ -80,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{68FFE9DB-3683-1841-2B05-C0F0CD58B874}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{F600E1E7-76F9-D3C1-56C9-C495C82B0FAE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,8 +1,29 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\QuadScroller.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelDescription.cs">
     <Files>
-      <File FileName="Assets\QuadScroller.cs" Line="24" Column="3" />
+      <File FileName="Assets\Scripts\LevelDescription.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ObstacleStats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\JumpingCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LevelDescription.cs" Line="158" Column="5" />
+      <File FileName="Assets\Scripts\ObstacleSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Graphics\FadeSprite.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerStats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Input\InputPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MaskSelecter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Graphics\LayerSelecter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DistanceReadout.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ComboReadoutUpdater.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\RankChecker.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MoveToNextScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MultiplayerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LaneManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Tutorial.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Graphics\FadeText.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TurnOnComboAndOffset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Physics\Entity.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ListenForPlayerJoin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ResultsScreen\Results.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
